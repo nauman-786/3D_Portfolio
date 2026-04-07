@@ -1,4 +1,4 @@
-website : https://3-d-portfolio-5gfs-7sfgqwpnu-nauman-786s-projects.vercel.app/
+website : http://3-d-portfolio-scb8.vercel.app/
 
 # 🚀 3D Interactive Portfolio
 
