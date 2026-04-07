@@ -18,8 +18,9 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  --accentColor: #5eead4;
-  --backgroundColor: #0a0e17;
+  --accentColor: #ff8a3d;
+  --accentRgb: 255, 138, 61;
+  --backgroundColor: #0f172a;
   --vh: 100vh;
   --vh: 100svh;
 }
@@ -66,7 +67,7 @@ main {
 body {
   margin: 0;
   height: auto;
-  background-color: #050810;
+  background: radial-gradient(circle at 20% 10%, #1f2937 0%, #0f172a 45%, #0a0f1f 100%);
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;

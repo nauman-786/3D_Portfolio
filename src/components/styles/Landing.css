@@ -234,7 +234,7 @@
 }
 
 h2.landing-info-h2 {
-  color: #14b8a6;
+  color: var(--accentColor);
   font-size: 42px;
   width: 120%;
   margin: 0;

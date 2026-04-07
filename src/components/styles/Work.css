@@ -44,20 +44,23 @@
   min-width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
-  padding: 50px 0;
+  padding: 36px 0;
 }
 
 .carousel-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 28px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .carousel-info {
-  flex: 1;
+  flex: 0 0 42%;
+  max-width: 42%;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: flex-start;
 }
 
@@ -108,7 +111,7 @@
 }
 
 .carousel-image-wrapper {
-  flex: 1;
+  flex: 0 0 58%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,18 +139,18 @@
 }
 
 .carousel-arrow:hover {
-  background: rgba(94, 234, 212, 0.15);
+  background: rgba(var(--accentRgb), 0.18);
   border-color: var(--accentColor);
   color: var(--accentColor);
-  box-shadow: 0 0 20px rgba(94, 234, 212, 0.15);
+  box-shadow: 0 0 20px rgba(var(--accentRgb), 0.2);
 }
 
 .carousel-arrow-left {
-  left: -70px;
+  left: 12px;
 }
 
 .carousel-arrow-right {
-  right: -70px;
+  right: 12px;
 }
 
 /* ── Dot Indicators ── */
@@ -171,13 +174,13 @@
 
 .carousel-dot:hover {
   border-color: var(--accentColor);
-  background: rgba(94, 234, 212, 0.2);
+  background: rgba(var(--accentRgb), 0.2);
 }
 
 .carousel-dot-active {
   background: var(--accentColor);
   border-color: var(--accentColor);
-  box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
+  box-shadow: 0 0 8px rgba(var(--accentRgb), 0.45);
 }
 
 /* ── Work Image (reused) ── */
@@ -189,6 +192,13 @@
 
 .work-image-in {
   position: relative;
+  width: min(100%, 620px);
+  aspect-ratio: 16 / 9;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #101622;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .work-link {
@@ -228,19 +238,21 @@
 }
 
 .work-image img {
-  max-width: 100%;
-  max-height: 400px;
-  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
 }
 
 /* ── Responsive ── */
 @media only screen and (max-width: 1600px) {
   .carousel-arrow-left {
-    left: -60px;
+    left: 10px;
   }
 
   .carousel-arrow-right {
-    right: -60px;
+    right: 10px;
   }
 }
 
@@ -258,7 +270,7 @@
   }
 
   .carousel-content {
-    gap: 40px;
+    gap: 24px;
   }
 
   .carousel-arrow-left {
@@ -278,10 +290,13 @@
 
   .carousel-info {
     width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
   }
 
   .carousel-image-wrapper {
     width: 100%;
+    flex: 1 1 auto;
   }
 
   .carousel-arrow {
@@ -325,7 +340,7 @@
     padding: 30px 0;
   }
 
-  .work-image img {
-    max-height: 250px;
+  .work-image-in {
+    aspect-ratio: 4 / 3;
   }
 }

@@ -5,32 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Full-Stack Appointment Management System",
+    category: "Healthcare Appointment System",
+    tools: "React.js, Tailwind CSS, FastAPI, SQLAlchemy",
+    image: "/images/clinic-website.png",
+    link: "https://github.com/nauman-786/Clinic-website",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Brain Tumor Detection",
+    category: "CNN-based Detection System",
+    tools: "TensorFlow, Keras, Gradio",
+    image: "/images/brain-tumor-detection.png",
+    link: "https://github.com/nauman-786/brain-tumor-detection",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Hand Gesture Control System",
+    category: "Real-time Gesture Recognition",
+    tools: "Python, OpenCV, Computer Vision",
+    image: "/images/hand-gesture.png",
+    link: "https://github.com/nauman-786/gesture-play",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Movie Recommendation System",
+    category: "Content-based Recommender",
+    tools: "Jupyter Notebook, Pandas",
+    image: "/images/movie-recommendation.png",
+    link: "https://github.com/nauman-786/Movie-Recommendation-System",
   },
 ];
 
@@ -68,7 +68,6 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
-          {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
@@ -86,7 +85,6 @@ const Work = () => {
             <MdArrowForward />
           </button>
 
-          {/* Slides */}
           <div className="carousel-track-container">
             <div
               className="carousel-track"
@@ -125,7 +123,6 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="carousel-dots">
             {projects.map((_, index) => (
               <button
